@@ -1,0 +1,16 @@
+.element {
+    width: 150px;
+    height: 150px;
+    background: teal;
+    margin: 100px auto;
+    transition: background 5s 10s;
+    transition: transform 5s 10s;
+    transform-origin: center;
+}
+
+
+.element:hover {
+    background: blue;
+    transform: scale(2);
+
+}
