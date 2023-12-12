@@ -1,10 +1,18 @@
 
 
-const currency = "USD";
 
-const exchangeData = {
-    PLN: 45,
-    [currency]: 200,
-};
+const persons = [
+    { name: "Rafał", surname: "Biolik"},
+    { name: "Jan", surname: "Kowalski"},
+];
 
-console.log(exchangeData);
+
+const getFullName = ({name, surname}) => `${name} ${surname}`;
+
+persons.sort((a , b) => getFullName(a).localeCompare(getFullName(b)));
+
+
+
+
+
+
